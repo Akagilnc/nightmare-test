@@ -24,23 +24,25 @@ describe('Page', function () {
     describe('/ (Try goto Login Page and back)', () => {
         it('should process without error', done => {
             nightmare.goto(start_url)
+
                 .wait(login_btn_top)
                 .click(login_btn_top)
+
                 .wait(login_account_input)
                 .type(login_account_input, '13800001111')
                 .type(login_pass_input, 'a123456')
                 .wait(1000)
                 .click(login_account_input)
                 .click(login_pass_input)
-                .wait(1000)
 
+                .wait(1000)
                 .click(login_submit)
-                //.assert()
                 .wait(1000)
                 .screenshot('Login.png')
+
                 .url()
-                //.click('#btn > div.btn-switch > button.regular.selectPrice.active')
                 .end()
+
                 .then(function (result) {
                     done()
                     console.log(result)
