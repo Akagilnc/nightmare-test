@@ -1,7 +1,15 @@
 {
   "name": "nightware-test",
   "version": "0.0.1",
-  "dependencies": {
-    
+  "description": "Try to test SYG automatic",
+  "repository": "https://github.com/DeronLee/nightmare-test.git",
+  "license": "UNLICENSED",
+  "dependencies": {},
+  "devDependencies": {
+    "mocha": "^3.5.0",
+    "nightmare": "^2.10.0"
+  },
+  "scripts": {
+    "test": "mocha"
   }
 }
