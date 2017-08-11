@@ -21,7 +21,7 @@ describe('Page', function () {
         nightmare = new Nightmare()
     })
 
-    describe('/ (Try goto Login Page and back)', () => {
+    describe('/ (Try goto Login Page and back and finish the order)', () => {
         it('should process without error', done => {
             nightmare.goto(start_url)
 
