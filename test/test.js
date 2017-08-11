@@ -31,14 +31,14 @@ describe('Page', function () {
                 .wait(login_account_input)
                 .type(login_account_input, '13800001111')
                 .type(login_pass_input, 'a123456')
-                .wait(1000)
+                .wait(500)
                 .click(login_account_input)
                 .click(login_pass_input)
 
-                .wait(1000)
+                .wait(500)
                 .click(login_submit)
-                .wait(1000)
-                .screenshot('Login.png')
+                .wait(500)
+                .screenshot('product_details.png')
 
                 .url()
                 .end()
